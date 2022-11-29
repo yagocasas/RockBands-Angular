@@ -1,0 +1,75 @@
+.bands--detail {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: #000000;
+  // background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-image: url('https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2020/03/guitarrista-fundo-preto-696x419.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(130, 125, 125, 0.8);
+    width: 70%;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    
+
+    .band--img {
+      width: fit-content;
+      align-self: center;
+      img {
+        height: 300px;
+        width: 300px;
+      }
+    }
+
+    h2 {
+      align-self: center;
+    }
+    .band--info {
+
+      p {
+        text-align: center;
+        line-height: 1.1;
+      }
+    }
+    .btn--box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      button {
+        border-radius: 15px;
+        width: 100px;
+      }
+
+      .delete--btn {
+        background-color: red;
+        border-color: white;
+        color: white;
+      }
+
+      .update--btn {
+        background-color: green;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .bands--detail{
+    .card {
+    width: 385px;
+  }
+  }
+  
+}

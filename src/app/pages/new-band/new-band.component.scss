@@ -1,0 +1,66 @@
+.form--contain {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  .form--box {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 15px solid orange;
+    width: -webkit-fill-available;
+    border-style: double;
+    
+   
+    input {
+        padding: 5px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    textarea {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .input--img{
+        color: white;
+    }
+
+    .select--form {
+     border: none;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 250px;
+       
+    }
+
+    .create--btn {
+      border-radius: 15px;
+      background-color: yellowgreen;
+      width: 100px;
+      align-self: center;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .form--contain{
+
+    .form--box {
+      height: 50%;
+      width: 40%;
+    
+    }
+
+  }
+}

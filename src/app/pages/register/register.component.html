@@ -1,0 +1,23 @@
+<div ngClass="register--box">
+  <form
+    [formGroup]="registerForm"
+    (ngSubmit)="onSubmit()"
+    ngClass="form--register"
+  >
+    <input
+      type="mail"
+      formControlName="email"
+      placeholder="Introduce un email"
+    />
+    <input
+      type="password"
+      formControlName="password"
+      placeholder="Introduce una contraseña"
+    />
+    <input type="text" formControlName="name" placeholder="Nombre" />
+    <input type="text" formControlName="lastname" placeholder="Apellidos" />
+    <label>
+      <button ngClass="reg--btn">Regístrate</button>
+    </label>
+  </form>
+</div>

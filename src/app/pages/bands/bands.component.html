@@ -1,0 +1,13 @@
+<div ngClass="bands--contain">
+  <div *ngFor="let myBand of myBands" ngClass="band--box">
+    <div class="band--contain">
+      <h2>{{ myBand.name }}</h2>
+      <div class="img--box">
+        <img src="{{ myBand.img }}" alt="{{ myBand.name }}" />
+      </div>
+      <button ngClass="btn" routerLink="/bands/{{ myBand.id }}">
+        Ver detalles
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+.login--box {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  height: 37.5em;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  h1 {
+    align-self: center;
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+  }
+
+  .form--login {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      padding: 5px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 14px;
+      font-weight: bold;
+      width: 250px;
+    }
+    label {
+      align-self: center;
+      .log--btn {
+        border-radius: 15px;
+        background-color: yellowgreen;
+        width: 100px;
+        align-self: center;
+        margin-top: 20px;
+        cursor: pointer;
+        
+        &:hover {
+            background-image: linear-gradient(
+              90deg,
+              #00c0ff 0%,
+              #ffcf00 49%,
+              #fc4f4f 80%,
+              #00c0ff 100%
+            );
+            animation: slidebg 5s linear infinite;
+          }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .login--box {
+    .form--login {
+      input {
+        font-size: 24px;
+        font-weight: bold;
+        width: 350px;
+      }
+      label {
+        align-self: center;
+        .log--btn {
+          border-radius: 15px;
+          background-color: yellowgreen;
+          width: 150px;
+          align-self: center;
+          margin-top: 20px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<div ngClass="bands--detail">
+  <div ngClass="card">
+    <h2>{{ myBand?.name }}</h2>
+    <div ngClass="band--img">
+      <img src="{{ myBand?.img }}" alt="{{ myBand?.name }}" />
+    </div>
+    <div ngClass="band--info">
+      <p>
+        La banda se fundó en el año {{ myBand?.founded }} en
+        {{ myBand?.origin }}.
+      </p>
+      <p>Está compuesta por: {{ myBand?.members }}.</p>
+      <p>
+        Anteriormente, formaron parte del grupo los siguientes artistas:
+        {{ myBand?.exMembers }}.
+      </p>
+    </div>
+    <div class="btn--box">
+      <button ngClass="delete--btn" (click)="deleteBand()">Eliminar</button>
+      <button ngClass="update--btn" routerLink="/updateBand/{{ myBand?._id }}">
+        Actualizar
+      </button>
+    </div>
+  </div>
+</div>

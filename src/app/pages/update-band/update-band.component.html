@@ -1,0 +1,21 @@
+<form [formGroup]="bandForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="name" placeholder="Nombre" />
+    <input type="file" formControlName="img" (change)="onFileChange($event)" placeholder="Imagen" />
+    <select formControlName="genre">
+      <option>Rock</option>
+      <option>Grunge</option>
+      <option>Funky</option>
+      <option>Metal</option>
+      <option>Soul</option>
+      <option>Blues</option>
+      <option>Folk</option>
+      <option>Rap</option>
+      <option>Pop</option>
+    </select>
+    <input type="text" formControlName="origin" placeholder="Ciudad/País" />
+    <input type="number" formControlName="founded" placeholder="Fundado" />
+    <textarea rows="3" cols="40" formControlName="members" placeholder="Miembros"></textarea>
+    <input type="text" formControlName="exMembers" placeholder="Exmiembros" />
+  
+    <button>Actualizar</button>
+  </form>

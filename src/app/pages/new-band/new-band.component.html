@@ -1,0 +1,23 @@
+<div class="form--contain">
+  <form [formGroup]="bandForm" (ngSubmit)="onSubmit()" ngClass="form--box">
+    <input type="text" formControlName="name" placeholder="Nombre" />
+    <input ngClass="input--img" type="file" formControlName="img" (change)="onFileChange($event)" />
+    <select formControlName="genre" ngClass="select--form">
+      <option>Rock</option>
+      <option>Grunge</option>
+      <option>Funky</option>
+      <option>Metal</option>
+      <option>Soul</option>
+      <option>Blues</option>
+      <option>Folk</option>
+      <option>Rap</option>
+      <option>Pop</option>
+    </select>
+    <input type="text" formControlName="origin" placeholder="Ciudad/Estado/País" />
+    <input type="number" min="1940" formControlName="founded" placeholder="Fundado" />
+    <textarea rows="3" cols="40" formControlName="members" placeholder="Miembros"></textarea>
+    <input type="text" formControlName="exMembers" placeholder="Exmiembros" />
+  
+    <button ngClass="create--btn">Crear</button>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+.register--box {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    height: 37.5em;
+    border: none;
+  
+.form--register {
+    padding: 40px; // 40/16 es em
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+        padding: 5px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        font-weight: bold;
+        width: 250px;
+
+    }
+    label {
+        align-self: center;
+        .reg--btn {
+            border-radius: 15px;
+            background-color: yellowgreen;
+            width: 100px;
+            align-self: center;
+            margin-top: 20px;
+    
+        }
+    }
+}
+}

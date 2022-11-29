@@ -1,0 +1,17 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media only screen and (min-width:1200px){
+    html {
+        background-color: #161616;
+    }
+    
+    body {
+        padding: 0 7rem 0 7rem;  
+    }
+}

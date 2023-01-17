@@ -44,7 +44,7 @@ checkSession(){
   }
   
   register(user: any){
-    return this.http.post("https://rockbands-back.vercel.app/users/postNewUser", user);
+    return this.http.post("https://rockbands-back.vercel.app/users/register", user);
   }
 
   handleError(error: HttpErrorResponse){
